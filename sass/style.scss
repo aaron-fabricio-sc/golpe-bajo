@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+$color-primario:#d94044;
+$color-secundario:#020202;
+$color-tercero:#051a2b;
+$gris-claro:rgb(226, 226, 226);
+$color-claro:white;
+$font-title:'Dancing Script', cursive;
+$font-text:'Open Sans', sans-serif;
+$spacing-small: 5px;
+$spacing-normal: 10px;
+$spacing-large: 20px;
+
+$font-size-title-big:40px;
+$font-size-title-normal:30px;
+
+
+body{
+    background: $color-tercero
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#Header{
+    
+    background: $color-secundario;
+    padding: $spacing-normal;
+   .navbar-brand{
+    h1{
+        font-weight: bold;
+        color: $color-claro;
+        font-family: $font-title;
+        
+        span{
+            color: $color-primario;
+   
+        }
+    }  
+   }
+   
+   
+   .boton{
+       background: $color-primario;
+       color: $color-claro;
+   }
+        
+    
+    
+}
+
+#carrusell{
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .images{
+                    height: 90vh;
+                    
+                }
+            }
+            
+        }
+    }
+}
+
+#integrantes{
+    .integrantes_title{
+        text-align: center;
+        color: $color-primario;
+        font-family: $font-title;
+        font-weight: bold;
+        font-size: $font-size-title-big;
+    }
+    .card-body{
+        background: $color-secundario;
+        color: $gris-claro;
+    }
+}
+
+#footer{
+    background: $color-secundario;
+    color: $color-claro;
+    margin: 0;
+    height: auto;
+    .container-fluid{
+        margin: 0;
+        height: auto;
+        h3{
+            color: $color-primario;
+            font-family: $font-title;
+            font-style: $font-size-title-normal;
+            font-weight: 700;
+            margin: $spacing-normal 0;
+        }
+        .redes{
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+      
+            align-items: center;
+            margin: 0;
+            height: auto;
+            li{
+                a{
+                    display: block;
+                    
+                    .fa-facebook{
+                        
+                        padding: 8px;
+                        border-radius: 5px;
+                        background: #3b5998;
+                        color: $color-claro;
+                        font-size: 25px;
+
+                    }
+                    .fa-whatsapp{
+                        
+                        padding: 8px;
+                        border-radius: 5px;
+                        background: #25d366;
+                        color: $color-claro;
+                        font-size: 25px;
+                    }
+                    .fa-instagram{
+                        
+                        padding: 8px;
+                        border-radius: 5px;
+                        background: #c13584;
+                        color: $color-claro;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .terminos{
+            list-style: none;
+            li{
+                a{
+                    color: $gris-claro;
+                    &:hover{
+                        color: $color-primario;
+                    }
+                }
+            }
+        }
+    }
+}
